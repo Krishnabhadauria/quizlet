@@ -1,7 +1,7 @@
 # <span style="color:#2c3e50;">QuizLet</span>
 
 ## <span style="color:#16a085;">Overview</span>
-**QuizLet** is a dynamic quiz generating website built using HTML, CSS, and JavaScript. The application integrates with an API to fetch computer science-related questions, providing an interactive and educational experience for users.
+**QuizLet** is a dynamic quiz-generating website built using HTML, CSS, and JavaScript. The application integrates with an API to fetch computer science-related questions, providing users with an interactive and educational experience. Access live code at: https://moonlit-gingersnap-ae5014.netlify.app/
 
 ## <span style="color:#16a085;">Features</span>
 - Fetches real-time computer science questions via API integration.
