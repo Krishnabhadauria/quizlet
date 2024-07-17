@@ -44,8 +44,6 @@
 ## <span style="color🟤;">Contributing</span>
 Contributions are welcome! Please fork the repository and create a pull request to suggest improvements or new features.
 
-## <span style="color🟤;">License</span>
-This project is licensed under the MIT License. See the `LICENSE` file for more details.
 
 ## <span style="color🟤;">Acknowledgements</span>
 - API provider Open Trivia Database.
