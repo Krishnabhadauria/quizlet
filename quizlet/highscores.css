@@ -1,0 +1,137 @@
+/* app.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-image: url('./bgimgquiz.webp');/* Light blue background */
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Ensures full viewport height */
+  padding: 0 100px; /* Padding on left and right */
+}
+
+/* Container for centering */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Align items in a column */
+  height: calc(100vh - 40px); /* Subtracting top and bottom margins */
+  margin: 20px 0; /* 30px margin from top and bottom */
+}
+
+#highScores {
+  background-color: white; /* White card background */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  padding: 40px; /* Increased padding for a larger feel */
+  border-radius: 15px; /* Larger radius for a smoother card shape */
+  max-width: 700px; /* Increased maximum width for larger cards */
+  width: 100%;
+  text-align: center;
+}
+
+/* High Scores Title */
+#highScores h1 {
+  font-size: 4rem; /* Increased font size for the title */
+  color: #1e90ff; /* DodgerBlue */
+  margin-bottom: 30px;
+}
+
+/* High Scores List */
+#highScoresList {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 30px; /* Extra space below the list */
+  font-size: 1.8rem; /* Larger font size for the list items */
+}
+
+#highScoresList li {
+  background-color: #f8f9fa; /* Light gray background for list items */
+  padding: 20px; /* Increased padding for list items */
+  margin: 15px 0; /* More margin between items */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+}
+
+#highScoresList li:nth-child(even) {
+  background-color: #e9ecef; /* Slightly darker gray for even rows */
+}
+
+/* Button Styling */
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #1e90ff;
+  color: white;
+  font-size: 1.8rem; /* Slightly larger button font size */
+  padding: 15px 30px; /* Increased padding for larger buttons */
+  border-radius: 10px;
+  margin: 15px 0;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: #4682b4; /* Darker blue on hover */
+  transform: translateY(-3px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #highScores {
+      padding: 30px;
+      max-width: 90%;
+  }
+
+  #highScores h1 {
+      font-size: 3rem;
+  }
+
+  #highScoresList {
+      font-size: 1.5rem;
+  }
+
+  #highScoresList li {
+      padding: 15px;
+  }
+
+  .btn {
+      font-size: 1.5rem;
+      padding: 12px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  #highScores {
+      padding: 20px;
+      max-width: 100%;
+  }
+
+  #highScores h1 {
+      font-size: 2.5rem;
+  }
+
+  #highScoresList {
+      font-size: 1.3rem;
+  }
+
+  #highScoresList li {
+      padding: 12px;
+  }
+
+  .btn {
+      font-size: 1.3rem;
+      padding: 10px 16px;
+  }
+}
